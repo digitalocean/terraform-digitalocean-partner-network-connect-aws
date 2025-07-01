@@ -11,6 +11,7 @@ resource "digitalocean_partner_attachment" "megaport" {
   naas_provider                = "MEGAPORT"
   redundancy_zone              = var.diversity_zone == "red" ? "MEGAPORT_RED" : var.diversity_zone == "blue" ? "MEGAPORT_BLUE" : var.diversity_zone
   vpc_ids                      = var.do_vpc_ids
+  parent_uuid                  = var.parent_uuid
   bgp {
     local_router_ip = var.do_local_router_ip
     peer_router_asn = var.mp_asn

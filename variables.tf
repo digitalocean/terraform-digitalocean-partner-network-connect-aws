@@ -12,6 +12,12 @@ variable "do_region" {
   }
 }
 
+variable "parent_uuid" {
+  description = "The UUID of an existing Partner Network Connect. If this is specified then the Partner Network Connects will be configured in an HA configuration."
+  type        = string
+  default     = null
+}
+
 variable "mp_contract_term_months" {
   description = "The term of the Megaport contract in months: valid values are 1, 12, 24, and 36. Set to 1 for a month-to-month contract with no minimum term."
   type        = number
