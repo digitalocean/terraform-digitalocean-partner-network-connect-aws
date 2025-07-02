@@ -69,3 +69,9 @@ module "pnc" {
 | `mp_asn`                     | Megaport ASN (defaults to `133937`)                                                                                                        | `number`       | `133937` |    no    |
 
 
+## Outputs
+
+
+| Name                      | Description                                                                     |
+|---------------------------|---------------------------------------------------------------------------------|
+| `partner_attachment_uuid` | The UUID of the Partner Network Connect Attachment. Needed when configuring HA. |
