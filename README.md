@@ -75,3 +75,8 @@ module "pnc" {
 | Name                      | Description                                                                     |
 |---------------------------|---------------------------------------------------------------------------------|
 | `partner_attachment_uuid` | The UUID of the Partner Network Connect Attachment. Needed when configuring HA. |
+
+## Testing
+This module uses data sources from DigitalOcean, AWS and Megaport, but we do not have an Megaport API Key available to our CI/CD system. This means that the normal `terraform plan` based testing used for testing Pull Requests is skipped. The test will show as passed, but the test is skipped unless both MEGAPORT_ACCESS_KEY and MEGAPORT_SECRET_KEY Env Vars are set. 
+
+Please ensure you test any changes locally prior to create a PR with updates.
