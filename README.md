@@ -1,3 +1,14 @@
+> [!WARNING]
+> ## This repository is deprecated
+>
+> This module has been consolidated into the [scale-with-simplicity](https://github.com/digitalocean/scale-with-simplicity) repository.
+>
+> **New location:** [modules/partner-network-connect-aws](https://github.com/digitalocean/scale-with-simplicity/tree/main/modules/partner-network-connect-aws)
+>
+> This repository will be archived. Please update your module references to use the new location.
+
+---
+
 # terraform-digitalocean-partner-network-connect
 
 A Terraform module to provision a [DigitalOcean Partner Network Connect](https://www.digitalocean.com/blog/partner-network-connect) between one or more DigitalOcean VPCs with an AWS VPC over Megaport, including:
